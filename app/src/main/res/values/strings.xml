@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Surya Namaskar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="breaks">
+        <item>30 Sec</item>
+        <item>60 Sec</item>
+        <item>90 Sec</item>
+        <item>120 Sec</item>
+    </string-array>
+<!--    Last one Recommended for both the spinners-->
+    <string-array name="TimePerRound">
+        <item>80 Sec</item>
+        <item>60 Sec</item>
+        <item>45 Sec</item>
+        <item>30 Sec</item>
+        <item>20 Sec</item>
+    </string-array>
 </resources>
