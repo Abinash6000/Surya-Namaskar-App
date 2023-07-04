@@ -8,7 +8,7 @@
         <item>90 Sec</item>
         <item>120 Sec</item>
     </string-array>
-<!--    Last one Recommended for both the spinners-->
+    <!--    Last one Recommended for both the spinners-->
     <string-array name="TimePerRound">
         <item>80 Sec</item>
         <item>60 Sec</item>

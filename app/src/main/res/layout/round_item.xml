@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#0077B6"
+    app:cardElevation="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3 Rounds X 2 Repetitions = 6"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            />
+
+</androidx.cardview.widget.CardView>
