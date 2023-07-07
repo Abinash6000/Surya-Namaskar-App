@@ -26,5 +26,26 @@
         android:id="@+id/startFragment"
         android:name="com.example.suryanamaskar.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_breakFragment"
+            app:destination="@id/breakFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_doneFragment"
+            app:destination="@id/doneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/breakFragment"
+        android:name="com.example.suryanamaskar.BreakFragment"
+        android:label="fragment_break"
+        tools:layout="@layout/fragment_break" >
+        <action
+            android:id="@+id/action_breakFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.example.suryanamaskar.DoneFragment"
+        android:label="fragment_done"
+        tools:layout="@layout/fragment_done" />
 </navigation>
