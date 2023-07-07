@@ -16,4 +16,5 @@
         <item>30 Sec</item>
         <item>20 Sec</item>
     </string-array>
+    <string name="startText">Start</string>
 </resources>
