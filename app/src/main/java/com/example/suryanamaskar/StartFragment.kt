@@ -16,15 +16,16 @@ import java.util.Locale
 import java.util.Timer
 import java.util.TimerTask
 
+var repetitions = 2
+
 class StartFragment : Fragment() {
     private var _binding: FragmentStartBinding? = null
     private val binding get() = _binding!!
 
     private var running = false
     var rounds = 3
-    var repetitions = 2
     var total = 0
-    val startTimeInMillis = 5000L
+    val startTimeInMillis = 3000L
     val timePerPose = startTimeInMillis/12
     var timeLeftInMillis = startTimeInMillis
     var startCountDownTimer: CountDownTimer? = null
@@ -97,8 +98,10 @@ class StartFragment : Fragment() {
                     } else {
                         repetitions--
                         running = false
-                        // navigate to break fragment
-                        findNavController().navigate(R.id.action_startFragment_to_breakFragment)
+                        if(repetitions != 0)
+                            findNavController().navigate(R.id.action_startFragment_to_breakFragment)
+                        else
+                            findNavController().navigate(R.id.action_startFragment_to_doneFragment)
                     }
                 }
 
