@@ -47,5 +47,9 @@
         android:id="@+id/doneFragment"
         android:name="com.example.suryanamaskar.fragment.DoneFragment"
         android:label="fragment_done"
-        tools:layout="@layout/fragment_done" />
+        tools:layout="@layout/fragment_done" >
+        <action
+            android:id="@+id/action_doneFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

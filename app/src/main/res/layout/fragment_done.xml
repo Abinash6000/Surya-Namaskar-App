@@ -12,7 +12,7 @@
         android:id="@+id/animation"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnRecord"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
         app:lottie_rawRes="@raw/animation" />
 
     <Button
-        android:id="@+id/btnRecord"
+        android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="143dp"
@@ -34,7 +34,7 @@
         android:shadowDx="12"
         android:shadowDy="12"
         android:shadowRadius="8"
-        android:text="Record"
+        android:text="Home"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
