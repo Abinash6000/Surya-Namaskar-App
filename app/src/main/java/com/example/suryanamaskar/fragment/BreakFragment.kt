@@ -1,4 +1,4 @@
-package com.example.suryanamaskar
+package com.example.suryanamaskar.fragment
 
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.suryanamaskar.R
 import com.example.suryanamaskar.databinding.FragmentBreakBinding
 
 class BreakFragment : Fragment() {

@@ -1,20 +1,16 @@
-package com.example.suryanamaskar
+package com.example.suryanamaskar.fragment
 
-import android.content.res.Resources
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.os.SystemClock
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
+import com.example.suryanamaskar.R
 import com.example.suryanamaskar.databinding.FragmentStartBinding
 import java.util.Locale
-import java.util.Timer
-import java.util.TimerTask
 
 var repetitions = 2
 
@@ -115,51 +111,75 @@ class StartFragment : Fragment() {
     private fun updatePoseImage() {
         when {
             timeLeftInMillis >= (11 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_1_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_1_f
+                ))
                 binding.tvMantra.text = mantras[0]
             }
             timeLeftInMillis >= (10 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_2_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_2_f
+                ))
                 binding.tvMantra.text = mantras[1]
             }
             timeLeftInMillis >= (9 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_3_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_3_f
+                ))
                 binding.tvMantra.text = mantras[2]
             }
             timeLeftInMillis >= (8 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_4_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_4_f
+                ))
                 binding.tvMantra.text = mantras[3]
             }
             timeLeftInMillis >= (7 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_5_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_5_f
+                ))
                 binding.tvMantra.text = mantras[4]
             }
             timeLeftInMillis >= (6 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_6_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_6_f
+                ))
                 binding.tvMantra.text = mantras[5]
             }
             timeLeftInMillis >= (5 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_7_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_7_f
+                ))
                 binding.tvMantra.text = mantras[6]
             }
             timeLeftInMillis >= (4 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_5_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_5_f
+                ))
                 binding.tvMantra.text = mantras[7]
             }
             timeLeftInMillis >= (3 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_4_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_4_f
+                ))
                 binding.tvMantra.text = mantras[8]
             }
             timeLeftInMillis >= (2 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_3_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_3_f
+                ))
                 binding.tvMantra.text = mantras[9]
             }
             timeLeftInMillis >= (1 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_2_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_2_f
+                ))
                 binding.tvMantra.text = mantras[10]
             }
             timeLeftInMillis >= (0 * timePerPose) -> {
-                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.pose_1_f))
+                binding.ivPose.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.pose_1_f
+                ))
                 binding.tvMantra.text = mantras[11]
             }
         }

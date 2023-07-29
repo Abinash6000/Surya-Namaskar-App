@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back2"
     android:padding="16dp"
-    tools:context=".DoneFragment">
+    tools:context=".fragment.DoneFragment">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation"
