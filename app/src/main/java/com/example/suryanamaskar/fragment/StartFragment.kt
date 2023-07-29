@@ -2,6 +2,7 @@ package com.example.suryanamaskar.fragment
 
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,17 +10,17 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.example.suryanamaskar.R
+import com.example.suryanamaskar.currRepetitions
+import com.example.suryanamaskar.currRounds
 import com.example.suryanamaskar.databinding.FragmentStartBinding
+import com.example.suryanamaskar.roundsCount
 import java.util.Locale
-
-var repetitions = 2
 
 class StartFragment : Fragment() {
     private var _binding: FragmentStartBinding? = null
     private val binding get() = _binding!!
 
     private var running = false
-    var rounds = 3
     var total = 0
     val startTimeInMillis = 3000L
     val timePerPose = startTimeInMillis/12
@@ -47,8 +48,7 @@ class StartFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentStartBinding.inflate(inflater, container, false)
-
-        rounds = 3
+        currRounds = roundsCount
         startTimer()
 
         binding.pauseBtn.setOnClickListener {
@@ -85,16 +85,17 @@ class StartFragment : Fragment() {
                 }
 
                 override fun onFinish() {
-                    if(--rounds != 0) {
+                    if(--currRounds > 0) {
+                        Log.d("adfasdfasdf", currRounds.toString())
                         timeLeftInMillis = startTimeInMillis
                         startCountDownTimer = null
                         running = false
                         total++
                         startTimer()
                     } else {
-                        repetitions--
+                        currRepetitions--
                         running = false
-                        if(repetitions != 0)
+                        if(currRepetitions > 0)
                             findNavController().navigate(R.id.action_startFragment_to_breakFragment)
                         else
                             findNavController().navigate(R.id.action_startFragment_to_doneFragment)
