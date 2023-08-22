@@ -42,6 +42,42 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiSecondsPerRoundLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiRepetitionsLayout">
+        <EditText
+            android:id="@+id/etSecondsPerRound"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:hint="Secs/Round"
+            android:text="50"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiSecondsPerBreakLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiSecondsPerRoundLayout">
+        <EditText
+            android:id="@+id/etSecondsPerBreak"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:hint="Secs/Break"
+            android:text="120"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/tvTotal"
         android:layout_width="wrap_content"
@@ -51,7 +87,7 @@
         android:text="@string/total"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tiRoundsLayout"/>
+        app:layout_constraintTop_toBottomOf="@+id/tiSecondsPerBreakLayout"/>
 
     <Button
         android:id="@+id/btnSave"
