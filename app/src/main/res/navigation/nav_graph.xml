@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.suryanamaskar.fragment.HomeFragment"
+        android:name="com.project.suryanamaskar.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/roundsFragment"
-        android:name="com.example.suryanamaskar.fragment.RoundsFragment"
+        android:name="com.project.suryanamaskar.fragment.RoundsFragment"
         android:label="fragment_rounds"
         tools:layout="@layout/fragment_rounds" />
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.suryanamaskar.fragment.StartFragment"
+        android:name="com.project.suryanamaskar.fragment.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/breakFragment"
-        android:name="com.example.suryanamaskar.fragment.BreakFragment"
+        android:name="com.project.suryanamaskar.fragment.BreakFragment"
         android:label="fragment_break"
         tools:layout="@layout/fragment_break" >
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/doneFragment"
-        android:name="com.example.suryanamaskar.fragment.DoneFragment"
+        android:name="com.project.suryanamaskar.fragment.DoneFragment"
         android:label="fragment_done"
         tools:layout="@layout/fragment_done" >
         <action

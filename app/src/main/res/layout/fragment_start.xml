@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CAF0F8"
-    tools:context=".fragment.StartFragment">
+    tools:context="com.project.suryanamaskar.fragment.StartFragment">
 
     <ImageView
         android:id="@+id/ivPose"
