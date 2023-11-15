@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_startFragment_to_doneFragment"
             app:destination="@id/doneFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/breakFragment"

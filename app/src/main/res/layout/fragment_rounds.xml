@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CAF0F8"
     android:paddingTop="64dp"
     tools:context="com.project.suryanamaskar.fragment.RoundsFragment">
 
@@ -93,6 +92,7 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="32sp"
         android:layout_marginTop="32dp"
         android:text="SAVE"
         app:layout_constraintTop_toBottomOf="@id/tvTotal"

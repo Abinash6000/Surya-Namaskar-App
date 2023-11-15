@@ -14,3 +14,5 @@ var repetitionsCount: Int = 0
 
 var currRounds = roundsCount
 var currRepetitions = repetitionsCount
+
+var humans = false
